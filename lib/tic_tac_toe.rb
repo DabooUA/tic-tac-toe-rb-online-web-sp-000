@@ -87,7 +87,7 @@ end
     move(board, index, p_token)
     display_board(board)
   else
-    turn(board)
+    turn?(board)
     end
   end
 
