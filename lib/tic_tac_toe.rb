@@ -78,7 +78,7 @@ end
     return count
   end
 
-  def turn?(board)
+  def turn(board)
     puts "Please enter 1-9:"
     input = gets.strip
     index = input_to_index(input)
@@ -87,7 +87,7 @@ end
     move(board, index, p_token)
     display_board(board)
   else
-    turn?(board)
+    turn(board)
     end
   end
 
@@ -129,7 +129,7 @@ end
 
   def play(board)
     until over?(board) == true
-      turn?(board)
+      turn(board)
     end
 
     if won?(board)
